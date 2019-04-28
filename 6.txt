@@ -1,0 +1,26 @@
+use STUDY
+GO
+CREATE VIEW View_student
+     as
+     select studentid,name,sex,birthday
+from tb_student
+where classNo='计算机'
+  视图view_student_male代码：
+
+use STUDY
+GO
+CREATE VIEW  View_student_True
+    as 
+    select tb_student.studentid,name,address,birthday
+   from tb_student,tb_score
+where classNo='计算机' and sex='True'
+and tb_student.studentid=tb_score.studentid
+  视图view_student_avg代码：
+
+use STUDY
+GO
+CREATE VIEW View_student_avg(学号，均分)
+as 
+  select studentid,avg(score)
+from tb_score
+group by studentid

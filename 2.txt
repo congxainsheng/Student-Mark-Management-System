@@ -1,0 +1,10 @@
+use STUDY
+create table tb_course
+(
+courseid char(6) not null primary key,
+coursename char(20) not null,
+
+teacher char(10),
+classhour tinyint,
+credit tinyint not null,
+)

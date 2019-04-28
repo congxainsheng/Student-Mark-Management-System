@@ -1,0 +1,11 @@
+use STUDY
+create table tb_teacher
+(
+teacherNO char(10) not null primary key,
+teacherName char(10),
+sex bit,
+birthday datetime,
+post char(10),
+address char(20),
+phone char(20)
+)

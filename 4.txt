@@ -1,0 +1,7 @@
+use STUDY
+create table tb_score
+(
+studentid char(10),
+courseid char(6),
+score tinyint,
+)

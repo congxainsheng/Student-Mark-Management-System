@@ -1,0 +1,16 @@
+use STUDY
+create table tb_student
+(
+studentid char(10) not null primary key,
+name char(8) not null,
+sex bit,
+birthday datetime,
+address varchar(50),
+IDcard char(20),
+specialty char(16),
+sumcredit tinyint,
+phone char(20),
+faculty char(20),
+class char(10),
+note varchar(50),
+)

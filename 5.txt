@@ -1,0 +1,8 @@
+use STUDY
+create table tb_class
+(
+classNo char(6),
+className char(10),
+classSize char(5),
+grade char(4),
+)
